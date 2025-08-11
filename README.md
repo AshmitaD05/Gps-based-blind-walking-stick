@@ -1,5 +1,6 @@
 GPS-Based Blind Walking Stick
    An IoT-powered assistive device designed to improve mobility, safety, and independence for visually impaired individuals. The smart walking stick integrates ultrasonic sensors, a water sensor, camera-based object detection, GPS tracking, and emergency communication via the Twilio platform.
+   
 
 📜 Table of Contents
     • Overview
@@ -11,6 +12,7 @@ GPS-Based Blind Walking Stick
     • How to Use
     • Results
     • Contributors
+    
 
 📖 Overview
    Visually impaired individuals face significant challenges in navigation and safety due to limitations of traditional walking aids like white canes. This GPS-based smart      walking stick provides:
@@ -20,6 +22,7 @@ GPS-Based Blind Walking Stick
     • Live GPS tracking
     • Emergency location sharing to a guardian via SMS
 
+
 🚀 Features
     • Obstacle Detection → Ultrasonic sensors detect obstacles up to 100 cm and trigger a buzzer alert.
     • Water Detection → Water level sensor detects wet/slippery surfaces and alerts with specific beep patterns.
@@ -27,6 +30,7 @@ GPS-Based Blind Walking Stick
     • GPS Tracking → NEO-6M GPS module tracks user location in real time.
     • Emergency Communication → Sends current location to a guardian through Twilio SMS with Google Maps link.
     • Low Power Consumption → Uses ESP32-S3 for efficient performance.
+    
 
 🛠 Hardware Components
   No.	  Component	           Specification
@@ -41,12 +45,14 @@ GPS-Based Blind Walking Stick
   9	    Speaker	             3W, 4Ω
   10	  Jumper Wires
 
+
 🖥 System Architecture
    Main Modules:
     • ESP32-S3 – Central control, GPS & Twilio integration, sensor data processing.
     • Arduino UNO – ESP32-CAM integration for object detection.
     • Sensors – Ultrasonic & water detection modules for hazard alerts.
     • Communication – Twilio API for emergency SMS alerts.
+    
 
 ⚙ Working Principle
   1️⃣ Obstacle Detection – Ultrasonic sensor measures distance; buzzer alerts if obstacle < 100 cm.
@@ -54,6 +60,7 @@ GPS-Based Blind Walking Stick
   3️⃣ Object Recognition – ESP32-CAM + FOMO detects and identifies objects with ~85–90% accuracy.
   4️⃣ Emergency Alert – Pressing the push button sends GPS coordinates to guardian’s phone.
   5️⃣ GPS + Twilio – Extracts latitude/longitude, formats Google Maps link, sends via SMS.
+  
 
 📦 Installation & Setup
    1️⃣ Hardware Assembly – Connect sensors, GPS, camera, buzzer, and buttons as per circuit diagram.
@@ -74,12 +81,14 @@ GPS-Based Blind Walking Stick
    • In case of emergency:
      – Press the push button.
      – Guardian receives an SMS with the live GPS location.
+     
 
 📊 Results
     • Obstacle Detection → ±3 cm accuracy.
     • GPS Tracking → ±3 m in open areas, ±10 m in urban areas.
     • Object Recognition → ~85–90% accuracy using FOMO algorithm.
     • Water Detection → Response time less than 1 second.
+    
 
 👨‍💻 Contributors
     • Ashmita D  
