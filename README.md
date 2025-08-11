@@ -94,14 +94,6 @@ Visually impaired individuals face significant challenges in navigation and safe
 
 ---
 
-## 📊 Results
-- **Obstacle Detection** → ±3 cm accuracy.
-- **GPS Tracking** → ±3 m in open areas, ±10 m in urban areas.
-- **Object Recognition** → ~85–90% accuracy using FOMO algorithm.
-- **Water Detection** → Response time less than 1 second.
-
----
-
 ## 👨‍💻 Contributors
 - **Ashmita D**
 - **Samyuktha V**
